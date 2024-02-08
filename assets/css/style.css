@@ -43,26 +43,6 @@
     src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2');
 }
 
-/*==================================================
-                header start
-==================================================*/
-
-/*----------------- nav-bar -----------------*/
-
-/* logo */
-
-/* menu */
-
-/*----------------- hero-section -----------------*/
-
-/* content */
-
-/* image */
-
-/*==================================================
-                header end
-==================================================*/
-
 
 /*-------------------- 
   custom properties 
@@ -71,29 +51,30 @@
     --primary-color: #FA804C;
     --secondary-color: #363958;
 
-    --ff-bebas: 'Bebas Neue', sans-serif; 
+    --ff-bebas: 'Bebas Neue', sans-serif;
     --ff-roboto: 'Roboto', sans-serif;
 
-    /* background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 79, 243, 1) 0%, rgba(53, 67, 188, 1) 100%); */
-
     --section-title-fns: 48px;
-    --item-title-fns: 24px;
     --item-price-fns: 36px;
     --text-fns: 16px;
 
-    --fw-r: 300;
     --fw-m: 500;
     --fw-b: 800;
     --fw-xb: 900;
+
+    --trans-color: color .4s;
 }
 
+
+/*-------------------- 
+  preset properties 
+--------------------*/
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
-    color: #3E3E3E; 
+    color: #3E3E3E;
     background: none repeat scroll 0 0;
     margin: 0 auto;
 }
@@ -115,10 +96,93 @@ img {
     vertical-align: middle;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: var(--ff-bebas);
+p {
+    font-family: var(--ff-roboto);
+    font-size: var(--text-fns);
+    color: #3E3E3E;
 }
 
+
+/*==================================================
+                header start
+==================================================*/
+.header-bg {
+    background-image: url(../../assets/images/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+/*----------------- nav-bar -----------------*/
+
+/* logo */
+
+/* menu */
+
+/*----------------- hero-section -----------------*/
+.hero-content h2 {
+    font-family: var(--ff-bebas);
+    font-size: 80px;
+    font-weight: var(--fw-m);
+}
+
+.hero-content h2 .heading-1 {
+    color: var(--primary-color);
+}
+
+.hero-content h2 .heading-2 {
+    color: var(--secondary-color);
+}
+
+.nike-btn {
+    font-family: var(--ff-roboto);
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(61, 79, 243, 1) 0%, rgba(53, 67, 188, 1) 100%);
+    padding: 12px 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: var(--trans-color);
+}
+
+.nike-btn:hover {
+    color: var(--primary-color);
+}
+/*==================================================
+                header end
+==================================================*/
+
+/*==================================================
+                casual-shoe start
+==================================================*/
+.casual-shoes {
+   margin-top: 100px;
+   margin-bottom: 140px;
+}
+/*----------------- title -----------------*/
+.casual-shoes h4 {
+    font-family: var(--ff-bebas);
+    font-size: var(--section-title-fns);
+    color: var(--secondary-color);
+}
+
+.item-img {
+    background-color: #F1F1F1;
+}
+
+/*----------------- items -----------------*/
+.item-content h5 {
+    color: var(--secondary-color);
+}
+.price-btn h3 {
+    font-size: var(--item-price-fns);
+    color: var(--primary-color);
+}
+
+
+/*==================================================
+                casual-shoe end
+==================================================*/
