@@ -1,0 +1,124 @@
+/* bebas-neue - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bebas-neue-v14-latin-regular.woff2') format('woff2');
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+
+/* roboto-900 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2');
+}
+
+/*==================================================
+                header start
+==================================================*/
+
+/*----------------- nav-bar -----------------*/
+
+/* logo */
+
+/* menu */
+
+/*----------------- hero-section -----------------*/
+
+/* content */
+
+/* image */
+
+/*==================================================
+                header end
+==================================================*/
+
+
+/*-------------------- 
+  custom properties 
+--------------------*/
+:root {
+    --primary-color: #FA804C;
+    --secondary-color: #363958;
+
+    --ff-bebas: 'Bebas Neue', sans-serif; 
+    --ff-roboto: 'Roboto', sans-serif;
+
+    /* background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 79, 243, 1) 0%, rgba(53, 67, 188, 1) 100%); */
+
+    --section-title-fns: 48px;
+    --item-title-fns: 24px;
+    --item-price-fns: 36px;
+    --text-fns: 16px;
+
+    --fw-r: 300;
+    --fw-m: 500;
+    --fw-b: 800;
+    --fw-xb: 900;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #3E3E3E; 
+    background: none repeat scroll 0 0;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-bebas);
+}
+
