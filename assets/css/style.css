@@ -214,6 +214,10 @@ p {
     font-weight: var(--fw-xb);
 }
 
+.card-img span.badge {
+    background: var(--primary-color);
+}
+
 /*==================================================
                shoes end
 ==================================================*/
