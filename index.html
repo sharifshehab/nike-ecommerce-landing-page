@@ -14,9 +14,46 @@
 <body>
 
     <header class="header-bg">
-        <nav></nav>
+        
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/Logo.png" alt="" class="img-fluid">
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/Logo.png" alt="" class="img-fluid">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact us</a>
+                        </li>
+                    </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <!-- hero-area start -->
-        <div class="hero-section container d-flex align-items-center flex-column-reverse flex-lg-row">
+        <div class="hero-section container d-flex align-items-center flex-column-reverse flex-lg-row py-5">
                 <div class="hero-image">
                     <img src="assets/images/Group 33092.png" alt="shoe image" class="img-fluid">
                 </div><!-- hero-image -->

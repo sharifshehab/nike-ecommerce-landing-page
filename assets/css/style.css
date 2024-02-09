@@ -111,19 +111,30 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
+    padding: 10px 0 100px 0;
 }
 
 /*----------------- nav-bar -----------------*/
 
 /* logo */
+.navbar-brand img {
+    width: 292px;
+    height: auto;
+}
 
 /* menu */
+.navbar-nav .nav-item a.nav-link {
+    font-weight: var(--fw-m);
+    color: var(--secondary-color);
+    padding-left: 28px;
+    padding-right: 28px;
+}
 
 /*----------------- hero-section -----------------*/
 .hero-section {
     gap: 10em;
 }
+
 @media only screen and (max-width: 767px) {
     .hero-section {
         gap: 5em;
