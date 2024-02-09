@@ -113,6 +113,7 @@ p {
     background-size: cover;
     padding: 100px 0;
 }
+
 /*----------------- nav-bar -----------------*/
 
 /* logo */
@@ -120,6 +121,19 @@ p {
 /* menu */
 
 /*----------------- hero-section -----------------*/
+.hero-section {
+    gap: 10em;
+}
+@media only screen and (max-width: 767px) {
+    .hero-section {
+        gap: 5em;
+    }
+}
+
+.hero-content {
+    flex: 0 0 45%;
+}
+
 .hero-content h2 {
     font-family: var(--ff-bebas);
     font-size: 80px;
@@ -151,38 +165,76 @@ p {
 .nike-btn:hover {
     color: var(--primary-color);
 }
+
 /*==================================================
                 header end
 ==================================================*/
 
 /*==================================================
-                casual-shoe start
+               shoes start
 ==================================================*/
-.casual-shoes {
-   margin-top: 100px;
-   margin-bottom: 140px;
+.casual-shoes,
+.formal-shoes,
+.features-wrap {
+    margin-top: 100px;
+    margin-bottom: 140px;
 }
-/*----------------- title -----------------*/
-.casual-shoes h4 {
+
+/*----------------- section heading -----------------*/
+.casual-shoes h4,
+.formal-shoes h4 {
     font-family: var(--ff-bebas);
     font-size: var(--section-title-fns);
     color: var(--secondary-color);
 }
 
-.item-img {
+/*----------------- item contents -----------------*/
+.casual-shoes .card-img {
     background-color: #F1F1F1;
 }
 
-/*----------------- items -----------------*/
-.item-content h5 {
+.card-title {
     color: var(--secondary-color);
 }
-.price-btn h3 {
+
+.price-btn span {
     font-size: var(--item-price-fns);
     color: var(--primary-color);
+    font-weight: var(--fw-xb);
 }
 
+/*==================================================
+               shoes end
+==================================================*/
 
 /*==================================================
-                casual-shoe end
+               features start
+==================================================*/
+.features {
+    gap: 7em;
+}
+
+.feature {
+    padding-right: 70px;
+}
+
+.feature img {
+    width: 80px;
+}
+
+.feature-items {
+    flex: 0 0 40%;
+}
+
+.feature-image,
+.hero-image {
+    flex: 1;
+}
+
+.feature-content p {
+    margin: 0;
+}
+
+/*==================================================
+               features end
 ==================================================*/
