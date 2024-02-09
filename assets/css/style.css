@@ -165,7 +165,7 @@ p {
     color: #ffffff;
     background: rgb(2, 0, 36);
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(61, 79, 243, 1) 0%, rgba(53, 67, 188, 1) 100%);
-    padding: 12px 35px;
+    padding: 12px 24px;
     cursor: pointer;
     border-radius: 5px;
     outline: none;
@@ -175,6 +175,10 @@ p {
 
 .nike-btn:hover {
     color: var(--primary-color);
+}
+
+.nike-btn-img {
+    width: 25px;
 }
 
 /*==================================================
